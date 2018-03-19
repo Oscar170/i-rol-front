@@ -1,7 +1,7 @@
-import * as React from 'react';
-import './App.css';
+import * as React from 'react'
+import './App.css'
 
-const logo = require('./logo.svg');
+const logo = require('./logo.svg')
 
 const App = () => (
   <div className="App">
@@ -13,6 +13,6 @@ const App = () => (
       To get started, edit <code>src/App.tsx</code> and save to reload.
     </p>
   </div>
-);
+)
 
-export default App;
+export default App
