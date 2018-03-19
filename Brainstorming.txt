@@ -1,0 +1,19 @@
+FEATURES
+- Creacion de usuario
+- Crear Auth
+- Creacion/unirse partida
+------------------------
+- Creacion/select de personaje
+    - Lore
+    - Stats
+    - Usables (items/armas/conjuros )
+- Creacion/select de usables
+
+
+
+
+
+DESIGN
+Like prototype de Ivan
+- Menu Tabs (arriba o abajo)
+- Hamburger
