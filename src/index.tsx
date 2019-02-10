@@ -1,25 +1,14 @@
-import * as React from 'react'
-import * as ReactDOM from 'react-dom'
-import { createStore, combineReducers } from 'redux'
-import { Provider, Store } from 'react-redux'
-import { HashRouter as Router, Route } from 'react-router-dom'
-import reducers from './reducers'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import * as serviceWorker from './serviceWorker'
 import App from './App'
-import registerServiceWorker from './registerServiceWorker'
-import './index.css'
-
-const state = createStore(combineReducers(reducers))
-
-const wrapApp = (AppComponent: () => JSX.Element, reduxStore: Store<{}>) => (
-  <Provider store={reduxStore}>
-    <Router>
-      <Route path="/" component={App} />
-    </Router>
-  </Provider>
-)
 
 ReactDOM.render(
-  wrapApp(App, state),
-  document.getElementById('root') as HTMLElement
+  <App />,
+  document.getElementById('root'),
 )
-registerServiceWorker()
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+serviceWorker.register()

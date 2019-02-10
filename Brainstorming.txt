@@ -9,10 +9,6 @@ FEATURES
     - Usables (items/armas/conjuros )
 - Creacion/select de usables
 
-
-
-
-
 DESIGN
 Like prototype de Ivan
 - Menu Tabs (arriba o abajo)
